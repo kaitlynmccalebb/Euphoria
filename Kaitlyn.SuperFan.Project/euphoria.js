@@ -1,0 +1,170 @@
+
+var a= document.getElementById("button");
+var b= document.getElementById("button2");
+var c= document.getElementById("button3");
+var bigimage= document.getElementById("bigpic");
+var nextimage= document.getElementById("bigpic2");
+var music= document.getElementById("music1");
+var img= document.getElementById("smallimage");
+var imgb= document.getElementById("smallimage2");
+var imgc= document.getElementById("smallimage3");
+var texta= document.getElementById("text");
+var textb= document.getElementById("text2");
+var textc= document.getElementById("text3");
+var page= document.getElementById("page");
+var girl1 = false
+var pageb= document.getElementById("page2");
+var boy1 = false
+var pagec= document.getElementById("page3");
+var girl2 = false
+var d= document.getElementById("press");
+var e= document.getElementById("press2");
+var f= document.getElementById("press3");
+var pic= document.getElementById("lilimage");
+var picb= document.getElementById("lilimage2");
+var picc= document.getElementById("lilimage3");
+var bigimg= document.getElementById("largepic");
+var nextimg= document.getElementById("largepic2");
+var letters= document.getElementById("letters");
+var lettersb= document.getElementById("letters2");
+var lettersc= document.getElementById("letters3");
+var g= document.getElementById("click");
+var h= document.getElementById("click2");
+var i= document.getElementById("click3");
+var character= document.getElementById("julespic");
+var newcharacter= document.getElementById("julespic2");
+var photo= document.getElementById("tinyimage");
+var photob= document.getElementById("tinyimage2");
+var photoc= document.getElementById("tinyimage3");
+var type= document.getElementById("type");
+var typeb= document.getElementById("type2");
+var typec= document.getElementById("type3");
+var honors= document.getElementById("honors");
+var honorsb= document.getElementById("honors2");
+var honorsc= document.getElementById("honors3");
+function multiTask(elem){
+	document.getElementById("ruemusic").play();
+	document.getElementById("ruemusic").loop = true;
+	a.classList.remove("none");
+	b.classList.remove("none");
+	c.classList.remove("none");
+	bigimage.classList.toggle("main");
+	nextimage.classList.toggle("none");
+	console.log("hey");
+}
+
+function disPlay(elem){
+	img.classList.toggle("none");
+	texta.classList.toggle("none");
+}
+function apPear(elem){
+	imgb.classList.toggle("none");
+	textb.classList.toggle("none");
+}
+function visAble(elem){
+	imgc.classList.toggle("none");
+	textc.classList.toggle("none");
+}
+function newPage(elem){
+	document.getElementById("ruemusic").pause();
+	page.classList.add("none");
+	pageb.classList.remove("none");
+	pageb.classList.add("page2");
+	console.log("hey");
+	boy3 = true;
+	checkDone();
+}
+function doAlot(elem){
+	document.getElementById("natemusic").play();
+	document.getElementById("natemusic").loop = true;
+	d.classList.remove("none");
+	e.classList.remove("none");
+	f.classList.remove("none");
+	bigimg.classList.toggle("real");
+	nextimg.classList.toggle("none");
+	console.log("hey");
+}
+function yesShow(elem){
+	pic.classList.toggle("none");
+	letters.classList.toggle("none");
+}
+function yesApear(elem){
+	picb.classList.toggle("none");
+	lettersb.classList.toggle("none");
+}
+function yesVisable(elem){
+	picc.classList.toggle("none");
+	lettersc.classList.toggle("none");
+}
+function lastPage(elem){
+	document.getElementById("natemusic").pause();
+	pageb.classList.add("none");
+	page.classList.remove("none");
+	pageb.classList.add("page2");
+	console.log("hey");
+}
+function continueThis(elem){
+	document.getElementById("natemusic").pause();
+	pageb.classList.add("none");
+	pagec.classList.remove("none");
+	girl2 = true;
+	checkDone();
+}
+function multiFunction(elem){
+	document.getElementById("julesmusic").play();
+	document.getElementById("julesmusic").loop = true;
+	g.classList.remove("none");
+	h.classList.remove("none");
+	i.classList.remove("none");
+	character.classList.toggle("focus");
+	newcharacter.classList.toggle("none");
+	console.log("hey");
+}
+function julesShow(elem){
+	photo.classList.toggle("none");
+	type.classList.toggle("none");
+}
+function julesApear(elem){
+	photob.classList.toggle("none");
+	typeb.classList.toggle("none");
+}
+function julesVisable(elem){
+	photoc.classList.toggle("none");
+	typec.classList.toggle("none");
+	
+}
+function goBack(elem){
+	document.getElementById("julesmusic").pause();
+	pagec.classList.add("none");
+	pageb.classList.remove("none");
+	pageb.classList.add("page2");
+	console.log("hey");
+}
+function reStart(elem){
+	document.getElementById("julesmusic").pause();
+	pagec.classList.add("none");
+	page.classList.remove("none");
+	pageb.classList.add("page");
+	girl1 = true;
+	checkDone();
+}
+function theEnd(elem){
+	page.classList.add("none");
+	pagec.classList.remove("none");
+	pageb.classList.add("page3");
+	console.log("hey");
+}
+//honors//
+function checkDone(elem){
+	if (boy3 && girl2 && girl1){
+	honors.classList.remove("none");
+	honorsb.classList.remove("none");
+	honorsc.classList.remove("none");
+	}
+}
+function difWeb(elem){
+window.location.href = "https://www.hbo.com/euphoria";
+}
+////
+
+

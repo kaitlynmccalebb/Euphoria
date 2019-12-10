@@ -8,44 +8,49 @@
 		<link href="https://fonts.googleapis.com/css?family=Anton|Archivo+Black|Rubik+Mono+One&display=swap" rel="stylesheet">
 	</head>
 	<body> 
+	<div class="page"id="page">
 		<div class="row-small">
 			<h1> Euphoria </h1>
+			<div class=" none honors pointer animate action-button pulse filter" id="honors" onclick="difWeb(this)">
+					<img src="images/euphoriahonors.jpg" class="restrict ">
+			</div>
 		</div>
 		<div class="whole">
 			<div class="row-med">
 				<div class="box1 arrow">
-				<img src="leftarrow.jpg " class= "leftandright">
+					<img src="images/leftarrow.jpg " class= "leftandright pointer animate action-button pulse" onclick="theEnd(this)" />
 				</div>
 				<div class="box-char">
-				<img src="rueimage.jfif" class="main" >
+					<img class="main pointer animate action-button" onclick="multiTask(this)" id="bigpic" >
+					<img class="main2 none pointer animate action-button" src="images/rueimage2.png" id="bigpic2">
 				</div>
-				<div class="box2 arrow">
-				<img src="rightarrow.jpg"  class= "rightandleft"  align="right"> 
+				<div class="box2 arrow" onclick="newPage(this)">
+					<img src="images/rightarrow.jpg" class= "rightandleft pointer animate action-button pulse" align="right"> 
 				</div>
 			</div>
 			<div class="row-wide">
-				<div class="box-plus ">
-					<div class="button">
-						<center><h2> Character </h2></center>
-					</div>
-					<div class="image">
-						<img src="rueimage3.jpg" class="other" >
-					</div>
-					<div class="text">
-						<p> Rue struggles with her addiction to drugs. Her past has a role in this. She has suffered from panic attacks since
+				<div class="box-plus" id="box1">
+						<div class="none button pointer animate action-button" id="button" onclick="disPlay()">
+							<center><h2> Character </h2></center>
+						</div>
+						<div class="none image" id="smallimage">
+							<img src="images/rueimage3.jpg" class="other"  >
+						</div>
+						<div class="none text" id="text">
+							<p> Rue struggles with her addiction to drugs. Her past has a role in this. She has suffered from panic attacks since
 						she was 11 and was even given liquid Valium to calm her down. This along with the death of her father is what
 						drove to start taking heavy drugs. And even though she recently OD’d, and her sister found her nearly lifeless 
 						body on the floor, she still pursues that high which takes her away from the pain. </p>
-					</div>
+						</div>
 				</div>
-				<div class="box-plus ">
-					<div class="button">
-						<center><h2> Family </h2></center>
+				<div class="box-plus " id="box2">
+					<div class="none button pointer animate action-button"id="button2" onclick="apPear(this)">
+						<h2> Family </h2>
 					</div>
-					<div class="image">
-						<img src="rueandfamily.jpg" class="other" >
+					<div class="none image" id="smallimage2">
+						<img src="images/rueandfamily.jpg" class="other"  >
 					</div>
-					<div class="text">
+					<div class="none text" id="text2">
 						<p> Rue and her relationship with her mom is one of love and hate. Her mom is worried for Rue's health, 
 						especially after her overdose. As Rue gets older she sees the wrong past she is going on and becomes strict 
 						and agressive and other to protect Rue. Though Rue is rebellious and disobedient which leads to many arguments
@@ -53,14 +58,14 @@
 						</p>
 					</div>
 				</div>
-				<div class="box-plus ">
-					<div class="button">
-						<center><h2> Relationships </h2></center>
+				<div class="box-plus " id="box3">
+					<div class="none button pointer animate action-button" id= "button3" onclick="visAble(this)">
+						<h2> Relationships </h2>
 					</div>
-					<div class="image">
-						<img src="rueandjules.png" class="other" >
+					<div class="none image" id="smallimage3">
+						<img src="images/rueandjules.png" class="other">
 					</div>
-					<div class="text">
+					<div class="none text" id="text3">
 						<p> Jules comes into town the summer Rue overdosed. Rue quickly catches feelings for her when seeing how
 						wild and brave Jules is. The friendship and her crush on Jules motivates her to quit drugs. Though this helps
 						her and her relationship with her family, jules becomes a subsitute for the drugs in Rue's life
@@ -68,7 +73,145 @@
 					</div>
 				</div>
 			</div>
+		</div>	
+	</div>
+		<div class="none page2" id="page2">
+			<div class="row-small">
+				<h1> Euphoria </h1>
+				<div class="none honors pointer animate action-button pulse filter" id="honors2" onclick="difWeb(this)">
+					<img src="images/euphoriahonors.jpg" class="restrict ">
+				</div>
+			</div>
+			<div class="whole">
+				<div class="row-med">
+					<div class="box1 arrow" onclick="lastPage(this)">
+						<img src="images/leftarrow.jpg " class= "leftandright pointer animate action-button pulse">
+					</div>
+					<div class="box-char" onclick="doAlot(this)">
+						<img class="real pointer animate action-button" id="largepic">
+						<img class="real2 none pointer animate action-button" src="images/nateimage.jpg" id="largepic2">
+					</div>
+					<div class="box2 arrow" onclick="continueThis(this)">
+						<img src="images/rightarrow.jpg" class= "rightandleft pointer animate action-button pulse"> 
+					</div>
+				</div>
+				<div class="row-wide">
+					<div class="box-plus" id="square">
+						<div class="none button pointer animate action-button" id="press" onclick="yesShow(this)">
+							<h2> Character </h2>
+						</div>
+						<div class="none image" id="lilimage">
+							<img src="images/nateimage5.jfif" class="other"  >
+						</div>
+						<div class="none text" id="letters">
+							<p> Nate is a cishet white male who can fall back on the safety cushion that is his wealthy family.Nate’s a very tall 
+							boy who is conventionally attractive, he’s just attractive enough that people may assume, based on that, that he couldn’t 
+							possibly be up to no good — since “good” is often assumed in those who are “attractive.”. This is what makes
+							him terrifying, a person with extreme privilage and not afraid to misuse it. He is manipulative,violent,angry, and borderline sociopathic.</p>
+						</div>
+					</div>
+					<div class="box-plus " id="square2">
+						<div class="none button pointer animate action-button"id="press2" onclick="yesApear(this)">
+							<h2> Family </h2>
+						</div>
+						<div class="none image" id="lilimage2">
+							<img src="images/nateimage4.jpg" class="other"  >
+						</div>
+						<div class="none text" id="letters2">
+							<p>So far the show has hinted that the majority of Nate’s rage stems from him being aware of his father’s repressed sexuality after watching his dad’s ultra-organized videos(sexual)
+							collection and not being able to talk about it. And from his fixation on his own “perfection”
+							— modeled after his father’s pursuit of perfection and disdain for “weakness” — we know Cal having that big secret about his 
+							sexuality is technically an imperfection to his obsessive son. That Cal trying to hold on to his hollow and frankly sad 
+							definition of masculinity is inspiring a horrendously toxic version of that in Nate.</p>
+						</div>
+					</div>
+					<div class="box-plus " id="square3">
+						<div class="none button pointer animate action-button" id= "press3" onclick="yesVisable(this)">
+							<h2> Relationships </h2>
+						</div>
+						<div class="none image" id="lilimage3">
+							<img src="images/nateandmaddy.jpg" class="other">
+						</div>
+						<div class="none text" id="letters3">
+							<p> Nate's and Maddy's relationship, just like most in this show, is no way good.Nate's first interest for Maddy is her attractive face and body. Nate is abusive 
+							and manipulative to Maddy. Maddy is aware of this and breaks up with him several times but some how always ends up 
+							accepting him back. Maddy is another thing in Nate's life that he can find control over.</p>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
+		<div class="none page3" id="page3">
+			<div class="row-small">
+				<h1> Euphoria </h1>
+				<div class=" none honors pointer animate action-button pulse filter" id="honors3" onclick="difWeb(this)">
+					<img src="images/euphoriahonors.jpg" class="restrict ">
+				</div>
+			</div>
+			<div class="whole">
+				<div class="row-med">
+					<div class="box1 arrow"  onclick="goBack(this)">
+					<img src="images/leftarrow.jpg" class= "leftandright pointer animate action-button pulse">
+					</div>
+					<div class="box-char" onclick="multiFunction(this)">
+						<img class="focus pointer animate action-button" id="julespic">
+						<img class="focus2 none pointer animate action-button" src="images/jules2.jpg" id="julespic2">
+					</div>
+					<div class="box2 arrow" onclick="reStart(this)">
+						<img src="images/rightarrow.jpg"  class= "rightandleft pointer animate action-button pulse"  align="right"> 
+					</div>
+				</div>
+				<div class="row-wide">
+					<div class="box-plus" id="square">
+						<div class="none button pointer animate action-button" id="click" onclick="julesShow(this)">
+							<h2> Character </h2>
+						</div>
+						<div class="none image" id="tinyimage">
+							<img src="images/jules3.jfif" class="other"  >
+						</div>
+						<div class="none text" id="type">
+							<p>Jules is a transgender woman who goes through the troubles. She is proud to be
+							transgender and doesn't wish to be confused as a cisgender woman, Jules is confident in who she
+							is, and rather than struggling with her gender identity, her struggles are just like those of 
+							the cisgender teens around her.</p>
+						</div>
+					</div>
+					<div class="box-plus " id="square2">
+						<div class="none button pointer animate action-button"id="click2" onclick="julesApear(this)">
+							<h2> Family </h2>
+						</div>
+						<div class="none image" id="tinyimage2">
+							<img src="images/julesfamily.jpg" class="other"  >
+						</div>
+						<div class="none text" id="type2">
+							<p> She and her father moved after a messy divorce, 
+							which saw her father get full custody and possibly saw her mother fall victim of addiction 
+							and or mental health problems.At 11, she had a stay in a psychiatric hospital after her mother 
+							tricked her into being admitted into the unit.</p>
+						</div>
+					</div>
+					<div class="box-plus " id="square3">
+						<div class="none button pointer animate action-button" id= "click3" onclick="julesVisable(this)">
+							<h2> Relationships </h2>
+						</div>
+						<div class="none image" id="tinyimage3">
+							<img src="images/julesrelationship.jpg" class="other">
+						</div>
+						<div class="none text" id="type3">
+							<p> Jules has a conflicting love story between rue and nate. Nate reached out to Jules through 
+							dating app online catfished as the name "Tyler". Jules begins to have feelings for Tyler unaware of 
+							who he actually is. Nate then blackmailed Jules by legal threats using the information from he had got 
+							from her. Though with her relationship with Rue is less scary. Jules goes through the motion of wondering
+							if she actually feels any sexual attraction to Rue.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<audio src="allforus.mp3" id="ruemusic"></audio>
+		<audio src="gangster.mp3" id="natemusic"></audio>
+		<audio src="whenirip.mp3" id="julesmusic"></audio>
 		<script src="euphoria.js"></script>
 	</body>
 </html>
